@@ -1,9 +1,9 @@
 # Trybe_exercises - Módulo: Desenvolvimento Front-end :hourglass_flowing_sand:
 ##### Repositório criado para alocar os exercícios confeccionados no cruso da [Trybe](https://www.betrybe.com/), por [Camila Luiza Dornas de Oliveira](https://www.linkedin.com/in/camiladornas/).
 
-##### Bloco 11: IntroduÃ§Ã£o - React
+##### Bloco 11: Introdução - React
 
-:green_check_mark: 11-1: _'Hello, world!' no React!_
+✅ 11-1: _'Hello, world!' no React!_
 - [ ] 11-2: _Componentes React_
 - [ ] 11-3: _[Projeto - Movie Cards Library]()_
 
