@@ -1,0 +1,36 @@
+.App {
+    background-color: rgb(186, 250, 229);
+}
+
+.Title {
+    text-align: center;
+    background-color: gray;
+}
+
+.Card {
+    border: 2px gray solid;
+    border-radius: 100%;
+    display: inline-block;
+    width: 18%;
+    background-color:rgb(212, 23, 23);
+    margin: 10px;
+    justify-content: center;
+}
+
+.Name, .Type, .AvaregeWeight {
+    width:96%;
+    text-align: center;
+     padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+.AvaregeWeight {
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.Image {
+    margin-left: 30%;
+}

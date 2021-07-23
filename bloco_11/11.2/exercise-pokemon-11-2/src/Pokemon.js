@@ -11,15 +11,17 @@ class Pokemon extends React.Component {
     render() {
         const { pokemon: { name, type, averageWeight, image } } = this.props;
         return(
-            <div>
-                <div>
-                <p>{ name }</p>
-                <p>{ type }</p>
-                <p>
-                    {`AvaregeWeight: ${averageWeight.value} ${averageWeight.measurementUnit}`}
+            <div className='Card'>
+                <div className='Card-infos'>
+                <p className='Name'>{ name }</p>
+                <p className='Type'>{ type }</p>
+                <p className='AvaregeWeight'>
+                    { `${averageWeight.value} ${averageWeight.measurementUnit}` }
                 </p>
                 </div>
-                <img src={image} alt={name} />
+                <div className='Div-Image'>
+                <img className='Image' src={image} alt={name} />
+                </div>
             </div>
         )
     }
