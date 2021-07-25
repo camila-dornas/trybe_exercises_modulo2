@@ -6,35 +6,44 @@ class Form extends React.Component{
         this.handleChange = this.handleChange.bind(this);
         this.state = {
             nomeFuncionario: '',
+            cpf:0,
+            faixaSalarial:'',
+            status: '',
+            funcionarioAtivo: 'false',
         }
     }
 
-    handleChange = (event) => {
+    handleChange = ({ target }) => {
+        const { name } = target;
+        const value = target.type === 'checkbox' ? target.checked : target.velue;
+
         this.setState ({
-            nomeFuncionario: event.target.value,
-        })
+            [name]: value
+        });
     }
 
     render(){
+        const { nomeFuncionario, cpf, faixaSalarial, status, funcionarioAtivo } = this.state;
+        
         return(
            <div>
                <h1 className='Title'>Formulário de busca de funcionários</h1>
                <form className='Form'>
                    <label>
                        Nome do funcionário:
-                       <input type='text' name='nomeFuncionario' value={this.state.nomeFuncionario} onChange={this.handleChange} />
+                       <input type='text' name='nomeFuncionario' value={ nomeFuncionario } onChange={this.handleChange} />
                    </label>
                    <br />
                    <br />
                    <label>
                        CPF:
-                       <input type='number' name='cpf' />
+                       <input type='number' name='cpf' value={ cpf } onChange={this.handleChange}/>
                    </label>
                    <br />
                    <br />
                    <label>
                        Faixa Salarial:
-                       <select name='faixaSalarial'>
+                       <select name='faixaSalarial' value={ faixaSalarial } onChange={this.handleChange}>
                            <option>menos que R$1.000,00</option>
                            <option>entre R$1.000,01 e R$2.000,00</option>
                            <option>entre R$2.000,01 e R$3.000,00</option>
@@ -44,8 +53,14 @@ class Form extends React.Component{
                    <br />
                    <br />
                    <label>
-                       Status do funcionário:
-                       <textarea name='status'/>
+                       Características do funcionário:
+                       <textarea name='status' value={ status } onChange={this.handleChange}/>
+                   </label>
+                   <br />
+                   <br />
+                   <label>
+                       Funcionário ativo:
+                       <input type='checkbox' name='funcionarioAtivo'value={ funcionarioAtivo } onChange={this.handleChange}/>
                    </label>
                </form>
            </div>
