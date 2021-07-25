@@ -4,13 +4,17 @@
 ##### Bloco 11: Introdução - React
 
 ✅ 11-1: _'Hello, world!' no React!_
+
 ✅ 11-2: _Componentes React_
+
 ✅ 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-013-b-project-movie-cards-library/pull/82)_
 
 ##### Bloco 12: React
 
 ✅ 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
+
+- [ ] 12-2: _Eventos e formulários no React_
+- [ ] 
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
